@@ -1,0 +1,39 @@
+{
+    "geode": "5.10.1",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081",
+        "mac": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "hajin.custom-pi",
+    "name": "Custom Pi",
+    "version": "v1.0.0",
+    "developer": "Hajin",
+    "description": "Change the value of pi. Every rotation in the game obeys your new math.",
+    "settings": {
+        "enabled": {
+            "type": "bool",
+            "name": "Enabled",
+            "description": "Turn the pi override on/off.",
+            "default": true
+        },
+        "pi-value": {
+            "type": "float",
+            "name": "Value of Pi",
+            "description": "Real pi is 3.14159. Pi = 6.28 means everything spins twice as far. Pi = 1 means... less.",
+            "default": 3.14159265,
+            "min": 0.1,
+            "max": 30.0,
+            "control": {
+                "input": true,
+                "slider": true,
+                "slider-step": 0.01,
+                "arrows": true,
+                "arrow-step": 0.1,
+                "big-arrows": true,
+                "big-arrow-step": 1.0
+            }
+        }
+    }
+}
